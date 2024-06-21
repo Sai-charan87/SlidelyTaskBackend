@@ -54,9 +54,23 @@ To run the backend server locally, follow these steps:
 ##  Endpoints
 /ping: GET request that always returns true.
 
+![ping](https://github.com/Sai-charan87/Slidelyimages/blob/main/ping.png)
+
 /submit: POST request to save form submissions.
 
+![submit](https://github.com/Sai-charan87/Slidelyimages/blob/main/submit.png)
+
+db.json file before /submit
+
+![before db.json](https://github.com/Sai-charan87/Slidelyimages/blob/main/before%20submit.png)
+
+db.json file after /submit
+
+![after db.json](https://github.com/Sai-charan87/Slidelyimages/blob/main/after%20submit.png)
+
 /read: GET request to retrieve saved submissions.
+
+![read](https://github.com/Sai-charan87/Slidelyimages/blob/main/read.png)
 
 ## Directory Structure
 
