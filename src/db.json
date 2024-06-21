@@ -1,1 +1,18 @@
-{"submissions":[{"name":"Sai Charan","email":"dsaicharan001@gmail.com","phone":"1234567890","github_link":"www.github.com","stopwatch_time":"00:00:05"}]}
+{
+  "submissions": [
+    {
+      "name": "Sai Charan",
+      "email": "dsaicharan001@gmail.com",
+      "phone": "0123456789",
+      "github_link": "https://github.com/Sai-charan87",
+      "stopwatch_time": "00:00:07"
+    },
+    {
+      "name": "Charan",
+      "email": "dsaicharan2002@gmail.com",
+      "phone": "0123456789",
+      "github_link": "https://github.com/Sai-charan87",
+      "stopwatch_time": "00:00:07"
+    }
+  ]
+}

@@ -27,7 +27,14 @@ app.post('/submit', (req: Request, res: Response) => {
             return res.status(500).send('Error reading database.');
         }
 
-        const db = JSON.parse(data);
+        let db;
+        try {
+            db = JSON.parse(data);
+        } catch (error) {
+            console.error(error);
+            return res.status(500).send('Error parsing database JSON.');
+        }
+
         db.submissions.push(submission);
 
         fs.writeFile(path.join(__dirname, 'db.json'), JSON.stringify(db), (err) => {
@@ -51,7 +58,14 @@ app.get('/read', (req: Request, res: Response) => {
             return res.status(500).send('Error reading database.');
         }
 
-        const db = JSON.parse(data);
+        let db;
+        try {
+            db = JSON.parse(data);
+        } catch (error) {
+            console.error(error);
+            return res.status(500).send('Error parsing database JSON.');
+        }
+
         if (index >= 0 && index < db.submissions.length) {
             res.json(db.submissions[index]);
         } else {

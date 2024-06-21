@@ -30,9 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="src\app.ts" />
+    <Content Include=".gitignore" />
     <Content Include="package.json" />
     <Content Include="README.md" />
-    <Content Include="src\db.json" />
+    <Content Include="src\db.json">
+      <Publish>True</Publish>
+    </Content>
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
